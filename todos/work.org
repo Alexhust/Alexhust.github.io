@@ -1,0 +1,34 @@
+* TODO <2014-04-28 周一>[0/2]
+** TODO 尝试使用起org-mode的Todo list 功能[1/2]
+*** DONE 简单阅读了文档，掌握还不是很充分
+	- State "DONE"       from "TODO"       [2014-04-28 周一 15:29] \\
+**** 基本操作
+***** C-c C-t 
+               Rotate the TODO state of the current item among
+***** C-c a t
+               Show the global TODO list
+***** S-M-RET
+               Insert a new TODO entry below the current one
+**** 修改keywords及faces  for TODO keywords
+**** todo dependencies
+**** Priorities 
+**** subtasks
+*** TODO 观看视频
+** TODO 努力让Micro COS z单任务的工程在K60的开发板上work起来[0/2]
+   - State "TODO"       from ""           [2014-04-28 周一 16:59]
+   - 板级支持包BSP的修改不是很大，对于启动代码的分析还不足  
+   - 支持代码不能正常的启动，可能需要修改
+*** TODO 根据文档说明，缕清楚和开发板相关的文件
+	- State "TODO"       from ""           [2014-04-28 周一 16:59]
+**** DONE 板级支持文件
+	 - State "DONE"       from "TODO"       [2014-04-29 周二 21:28] \\
+	   这一部分还是建议在现有的没有操作系统的工程基础上修改，主要是代码的启动过程要清晰
+	   不建议使用IAR的库，建议自己编写启动文件
+	 - State "TODO"       from ""           [2014-04-28 周一 17:01]
+**** DONE 启动相关的文件
+	 - State "DONE"       from "TODO"       [2014-04-29 周二 21:29] \\
+	   参上
+	 - State "TODO"       from ""           [2014-04-28 周一 16:59]
+*** TODO 修改相关的文件
+	- State "TODO"       from ""           [2014-04-28 周一 17:00]
+      - 有问题，卡在任务调度部分的，在任务初始化之后，需要启动任务，当时任务被hang挂起了   

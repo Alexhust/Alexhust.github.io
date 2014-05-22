@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>projects</title>
+<meta http-equiv="Content-Type" content="text/html;charset=gb2312"/>
+<meta name="title" content="projects"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2014-05-19T17:04+0800"/>
+<meta name="author" content=""/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">projects</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 构建一个基于u/cosiii的多任务的应用</a>
+<ul>
+<li><a href="#sec-1-1">1.1 构建两个任务的基础模型</a>
+<ul>
+<li><a href="#sec-1-1-1">1.1.1 任务一：任务优先级为2，任务为让绿色灯闪烁</a></li>
+<li><a href="#sec-1-1-2">1.1.2 任务二：任务优先级为3，任务为让蓝色灯闪烁</a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-2">2 兵欲善其事，必先利其器[50%]</a>
+<ul>
+<li><a href="#sec-2-1">2.1 对于浏览器的明确定位，chrome用于科研方面任务，猎豹（maybe others）用于娱乐方面的需求</a>
+<ul>
+<li><a href="#sec-2-1-1">2.1.1 chrome的配置</a></li>
+<li><a href="#sec-2-1-2">2.1.2 另外将在记得chrome浏览器和自己的google账户绑定之后，扩展可以跟随账户走，即就是在新的环境下安装chrome后可以免除插件安装的繁杂过程</a></li>
+<li><a href="#sec-2-1-3">2.1.3 chrome快捷键</a></li>
+</ul>
+</li>
+<li><a href="#sec-2-2">2.2 版本控制 github[1/2]</a>
+<ul>
+<li><a href="#sec-2-2-1">2.2.1 初步体验了git的基本流程</a></li>
+<li><a href="#sec-2-2-2">2.2.2 阅读Pro Git的书籍</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> <span class="todo TODO">TODO</span> 构建一个基于u/cosiii的多任务的应用</h2>
+<div class="outline-text-2" id="text-1">
+
+
+</div>
+
+<div id="outline-container-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> 构建两个任务的基础模型</h3>
+<div class="outline-text-3" id="text-1-1">
+
+
+</div>
+
+<div id="outline-container-1-1-1" class="outline-4">
+<h4 id="sec-1-1-1"><span class="section-number-4">1.1.1</span> 任务一：任务优先级为2，任务为让绿色灯闪烁</h4>
+<div class="outline-text-4" id="text-1-1-1">
+
+</div>
+
+</div>
+
+<div id="outline-container-1-1-2" class="outline-4">
+<h4 id="sec-1-1-2"><span class="section-number-4">1.1.2</span> 任务二：任务优先级为3，任务为让蓝色灯闪烁</h4>
+<div class="outline-text-4" id="text-1-1-2">
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> <span class="todo TODO">TODO</span> 兵欲善其事，必先利其器[50%]</h2>
+<div class="outline-text-2" id="text-2">
+
+
+</div>
+
+<div id="outline-container-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> <span class="done DONE">DONE</span> 对于浏览器的明确定位，chrome用于科研方面任务，猎豹（maybe others）用于娱乐方面的需求</h3>
+<div class="outline-text-3" id="text-2-1">
+
+
+</div>
+
+<div id="outline-container-2-1-1" class="outline-4">
+<h4 id="sec-2-1-1"><span class="section-number-4">2.1.1</span> chrome的配置</h4>
+<div class="outline-text-4" id="text-2-1-1">
+
+<ul>
+<li id="sec-2-1-1-1">主要用的扩展：gestures for Google Chrome、New Tab Plus(微度新标签页)<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-2-1-1-2">另外还有一些关于chrome的知识，摘录如下：<br/>
+<ol>
+<li>Omnibox 
+
+<p>
+         也就是chrome的地址栏 这个地址栏功能非常强大 集打开网址 搜索 多引擎搜索切换于一体.  右击地址栏 选择修改搜索引擎 可以管理你的搜索引擎 
+         chrome会自动记录你用过的所有搜索引擎 在管理页面 分为三个栏目 最左边的是搜索引擎的名称 中间的是快捷键 右边是搜索地址 
+         一般将快捷键设置成好记一点的字母，比如将Baidu设置成b，这样每次在Omnibox中输入b再空格后，就能用百度搜索。默认设置的搜索为谷歌搜索。
+</p>
+</li>
+<li>任务管理器 
+
+<p>
+         右击标签页选择任务管理器或者按下Shfit+esc会弹出任务管理器 功能很强大 详细的列出运行的标签 扩展 APPS及其占用的内存 网络资源 CPU 等等一系列东西               在里面可以强制结束标签页或者扩展
+</p>
+</li>
+<li>实验室
+
+<p>
+          在地址栏键入about:flags进入实验室 实验内都是一些没有开发完成 还在测试的新功能 可以按照自己喜好打开一些 记住 浏览器要重启才会生效
+</p></li>
+</ol>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-2-1-2" class="outline-4">
+<h4 id="sec-2-1-2"><span class="section-number-4">2.1.2</span> 另外将在记得chrome浏览器和自己的google账户绑定之后，扩展可以跟随账户走，即就是在新的环境下安装chrome后可以免除插件安装的繁杂过程</h4>
+<div class="outline-text-4" id="text-2-1-2">
+
+</div>
+
+</div>
+
+<div id="outline-container-2-1-3" class="outline-4">
+<h4 id="sec-2-1-3"><span class="section-number-4">2.1.3</span> chrome快捷键</h4>
+<div class="outline-text-4" id="text-2-1-3">
+
+<ul>
+<li id="sec-2-1-3-1">Ctrl+L 突出显示网址<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-2-1-3-2">键入网址中"www."和 ".com"之间的部分，然后按 Ctrl+Enter 为您在地址栏中输入的内容添加"www."和".com"，然后打开网址<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-2-1-3-3">按 Ctrl+O，然后选择文件。 在谷歌浏览器中打开计算机中的文件<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-2-1-3-4">Ctrl+1 到 Ctrl+8 切换到标签栏中指定位置编号所对应的标签页，Ctrl+9 切换到最后一个标签页<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-2-1-3-5">Ctrl+H 查看历史记录页<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-2-1-3-6">Ctrl+U 查看源代码<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-2-1-3-7">Ctrl++ 放大文字、Ctrl+- 缩小文字<br/>
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> <span class="todo TODO">TODO</span> 版本控制 github[1/2]</h3>
+<div class="outline-text-3" id="text-2-2">
+
+
+</div>
+
+<div id="outline-container-2-2-1" class="outline-4">
+<h4 id="sec-2-2-1"><span class="section-number-4">2.2.1</span> <span class="done DONE">DONE</span> 初步体验了git的基本流程</h4>
+<div class="outline-text-4" id="text-2-2-1">
+
+<p>    1)建立仓库
+</p>
+<p>
+    2)添加（add）待管理的代码到仓库中
+</p>
+<p>
+    3)提交（commit）差异化代码完成本地的版本控制
+</p>
+<p>
+    4)推送（push）到github完成多方的版本控制
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-2-2-2" class="outline-4">
+<h4 id="sec-2-2-2"><span class="section-number-4">2.2.2</span> <span class="todo TODO">TODO</span> 阅读Pro Git的书籍</h4>
+<div class="outline-text-4" id="text-2-2-2">
+
+<ul>
+<li id="sec-2-2-2-1">第一章笔记<br/>
+<ul>
+<li id="sec-2-2-2-1-1">版本控制系统的类型<br/>
+<ul>
+<li>本地版本控制系统：RCS
+</li>
+<li>集中化版本控制系统：CVS、Subversion
+</li>
+<li>分布式版本控制系统：Git、Mercurial
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li id="sec-2-2-2-1-2">Git的基础要点<br/>
+<ul>
+<li>直接快照
+</li>
+<li>所有操作本地化
+</li>
+<li>通过哈希值时刻保证数据的完整性（所有保存在git数据库中的东西都是通过哈希值索引）
+</li>
+<li>三种状态（已提交、已缓存、已修改）
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li id="sec-2-2-2-1-3">Git的配置<br/>
+<ul>
+<li>通过git config &ndash;global core.editor emacs配置默认的编辑器
+</li>
+<li>通过git config &ndash;list查看已有的配置信息
+</li>
+</ul>
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li id="sec-2-2-2-2">第二章（Git 基础）<br/>
+<ul>
+<li id="sec-2-2-2-2-1">取得项目的Git仓库<br/>
+<ul>
+<li>从当前目录初始化
+</li>
+<li>从现有仓库克隆      
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li id="sec-2-2-2-2-2">git add命令<br/>
+    git add命令是一个多功能命令，根据目标文件的状态不同，此命令的效果也不同
+<ul>
+<li>跟踪新的文件（untracked-&gt;staged）
+</li>
+<li>可以把已经跟踪的文件放在缓存区(modified -&gt; staged)
+</li>
+<li>合并时把有冲突的文件标记为已经解决状态
+</li>
+</ul>
+
+
+</li>
+</ul>
+<ul>
+<li id="sec-2-2-2-2-3">忽略某些文件（通过.gitignore文件）<br/>
+<ul>
+<li>.gitignore文件的位置<br/>
+       位于和.git文件夹相同的文件路径，并添加到当前git仓库的管理当中
+</li>
+<li>.gitignore文件的编写
+<ol>
+<li>所有空行或者以注释符号 ＃ 开头的行都会被 Git 忽略
+</li>
+<li>可以使用标准的 glob 模式匹配(shell使用的简化的正则表达式)
+</li>
+<li>匹配模式最后跟反斜杠（/）说明要忽略的是目录
+</li>
+<li>要忽略指定模式以外的文件或目录，可以在模式前加上惊叹号（!）取反
+</li>
+</ol>
+
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li id="sec-2-2-2-2-4">git diff<br/>
+<ul>
+<li>git diff 用于比较工作目录中的当前文件和暂存区域快照之间的差异
+</li>
+<li>git diff &ndash;cache 用于比较暂存起来的文件和上次提交快照之间的差异 (&ndash;staged is a synonym of &ndash;cached)
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li id="sec-2-2-2-2-5">git commit -a 选型可以自动把所有已经跟踪过的文件暂存起来一并提交，跳过了git add的步骤<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-2-2-2-2-6">git rm<br/>
+<ul>
+<li>可以从已经跟踪文件清单中（确切说，是从暂存区域中移除），同时从工作目录中删除指定的文件    
+</li>
+<li>仅移除跟踪但不删除文件 git rm &ndash;cached &lt;file&gt;
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li id="sec-2-2-2-2-7">git mv 完成跟踪文件的重命名工作，相当于如下的三个步骤（已将readme重命名为readme1为例）<br/>
+<ul>
+<li>mv readme readme1
+</li>
+<li>git rm readme
+</li>
+<li>git add readme1 
+</li>
+</ul>
+
+
+</li>
+</ul>
+<ul>
+<li id="sec-2-2-2-2-8">git log 命令获取该项目源代码<br/>
+<ul>
+<li id="sec-2-2-2-2-8-1">命令选项<br/>
+<ul>
+<li>选项 p 按补丁格式显示每个更新之间的差异。
+</li>
+<li>选项 stat 显示每次更新的文件修改统计信息。
+</li>
+<li>选项 shortstat 只显示 &ndash;stat 中最后的行数修改添加移除统计。
+</li>
+<li>选项 name-only 仅在提交信息后显示已修改的文件清单。
+</li>
+<li>选项 name-status 显示新增、修改、删除的文件清单。
+</li>
+<li>选项 abbrev-commit 仅显示 SHA-1 的前几个字符，而非所有的 40 个字符。
+</li>
+<li>选项 relative-date 使用较短的相对时间显示（比如，“2 weeks ago”）。
+</li>
+<li>选项 graph 显示 ASCII 图形表示的分支合并历史。
+</li>
+<li>选项 pretty 使用其他格式显示历史提交信息。可用的选项包括 oneline，short，full，fuller 和 format（后跟指定格式）。
+</li>
+<li>选型 -2显示最近的两次更新
+</li>
+<li>详细的信息可查 git -log &ndash;help   
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li id="sec-2-2-2-2-8-2">图形化工具查看<br/>
+<ul>
+<li>使用命令gitk启动图形化界面
+</li>
+<li>sourcetree的图形化界面应该也是基于Gui git的，因为在没有安装GUI git的机器上在sourcetree下面依然可以调用Gui git
+</li>
+</ul>
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li id="sec-2-2-2-2-9">撤销<br/>
+<ul>
+<li>撤销刚才的撤销工作 git commit &ndash;amend
+</li>
+<li>取消已经暂存的文件 git reset HEAD &lt;文件&gt;
+</li>
+<li>取消刚刚对文件的修改 git checkout &ndash; &lt;文件&gt;
+</li>
+<li>可以通过查看git status获得当前状态下对文件操作相关命令
+</li>
+</ul>
+
+
+</li>
+</ul>
+<ul>
+<li id="sec-2-2-2-2-10">远程仓库<br/>
+<ul>
+<li id="sec-2-2-2-2-10-1">查看当前的远程仓库 git remote (推荐使用选项 -v 获得对应的克隆地址)<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-2-2-2-2-10-2">添加远程仓库 git remote add [shortname] [url]<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-2-2-2-2-10-3">从远程仓库抓取数据 git fetch [remote-name]<br/>
+<ul>
+<li>fetch 命令只是将远端的数据拉到本地仓库，并不自动合并到当前工作分支
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li id="sec-2-2-2-2-10-4">推送数据到远端 git push [remote-name] [branch-name]<br/>
+<ul>
+<li>如果在你推数据前，已经有其他人推送了若干更新，那你的推送操作就会被驳回。你必须先把他们的更新抓取到本地，并到自己的项目中，然后才可以再次推送。强推错误如下：Updates were rejected because the remote contains work that you do not have locally. 
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li id="sec-2-2-2-2-10-5">查看远程仓库信息 git remote show [remote-name]<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-2-2-2-2-10-6">远程仓库的删除 git remote rm [remote-name]<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-2-2-2-2-10-7">远程仓库的重命名 git remote rename [remote-name]<br/>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li id="sec-2-2-2-2-11">标签<br/>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="postamble">
+<p class="date">Date: 2014-05-19T17:04+0800</p>
+<p class="author">Author: </p>
+<p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
+</html>
